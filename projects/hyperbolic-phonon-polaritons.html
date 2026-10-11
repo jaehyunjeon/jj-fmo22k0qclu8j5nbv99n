@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Selective Excitation of Higher-Order Hyperbolic Phonon-Polaritonic Modes · Jaehyun Jeon</title>
+<meta name="description" content="I develop an analytic mode-matching framework, based on the transfer-matrix method, that captures conversion among image-polariton, phonon-polariton, and r">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="site-title" href="../index.html">Jaehyun Jeon</a>
+  <nav class="nav">
+    <a href="../index.html">About</a>
+    <a href="../research.html" class="active">Research</a>
+    <a href="../assets/Jaehyun_Jeon_CV.pdf" target="_blank" rel="noopener">CV</a>
+  </nav>
+</div></header>
+<main><div class="wrap">
+
+<a class="back" href="../research.html">← All research</a>
+<article class="project">
+  <h1>Selective Excitation of Higher-Order Hyperbolic Phonon-Polaritonic Modes</h1>
+  <p class="venue">Paper in preparation · co-first author</p>
+  <p class="where">KAIST · Quantum Nano Optics Lab</p>
+  <p class="authors"><b>J. Jeon</b><sup>†</sup>, H. Kim<sup>†</sup>, M. Jang, S. Menabde, M. S. Jang, “Selective Excitation of Higher-Order Hyperbolic Phonon Polaritonic Mode,” in preparation.</p>
+  
+  <div class="figure-ph">Figure coming soon</div>
+  <h2>Abstract</h2>
+  <p>I develop an analytic mode-matching framework, based on the transfer-matrix method, that captures conversion among image-polariton, phonon-polariton, and radiation modes at metal discontinuities. Combined with an adjoint optimization framework I built on the COMSOL API, I inverse-design an Au grating beneath hBN that selectively excites a desired higher-order hyperbolic phonon-polariton mode, and am validating the design with SNOM experiments.</p>
+  
+<h2>Problem</h2>
+<p>Hyperbolic phonon polaritons in hBN support a ladder of higher-order modes with extreme confinement, but far-field
+illumination couples mostly to the fundamental mode. The goal is to design an Au grating underneath hBN so that a chosen
+higher-order mode is selectively excited.</p>
+<h2>Analytic mode-matching framework</h2>
+<ul>
+<li>Built a transfer-matrix description in which each discontinuity converts between the eigenmodes on either side, using the unconjugated bilinear pairing appropriate for reciprocal, lossy systems.</li>
+<li>Discretized the radiation and evanescent continua with PEC boundaries to include non-guided channels while keeping an orthogonal modal basis.</li>
+<li>Analyzed the different projection formulations of the mode-conversion relation, which are equivalent only in the complete-basis limit, and compared their well-posedness under finite truncation. Introduced the full Gram matrix for non-orthogonal truncated bases.</li>
+</ul>
+<h2>Inverse design and experiment</h2>
+<ul>
+<li>Implemented adjoint-based shape optimization through the COMSOL API (adjoint source construction and gradient calculation), later generalized for use by other lab members.</li>
+<li>Inverse-designed the grating geometry for selective higher-order excitation; experimental validation with scattering-type SNOM is in progress.</li>
+</ul>
+
+</article>
+
+</div></main>
+<footer><div class="wrap">© 2026 Jaehyun Jeon</div></footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Research · Jaehyun Jeon</title>
+<meta name="description" content="Jaehyun Jeon — nanophotonics, inverse design, and resonant physics.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="site-title" href="index.html">Jaehyun Jeon</a>
+  <nav class="nav">
+    <a href="index.html">About</a>
+    <a href="research.html" class="active">Research</a>
+    <a href="assets/Jaehyun_Jeon_CV.pdf" target="_blank" rel="noopener">CV</a>
+  </nav>
+</div></header>
+<main><div class="wrap">
+
+<div class="page-head">
+  <h1>Research</h1>
+  <p>Theory and inverse design in nanophotonics. Click a project for details.</p>
+</div>
+<div class="cards">
+<a class="card" href="projects/preconditioning.html">
+  <img class="thumb" src="assets/img/thumbs/preconditioning.svg" alt="">
+  <div class="body">
+    <h3>Preconditioning Dynamics of Resonant Inverse Design</h3>
+    <p class="venue">Ongoing research</p>
+    <p class="where">Stanford University · Fan Group · 2026</p>
+    <p class="abstract">High-Q resonant inverse design is notoriously ill-conditioned. Using temporal coupled-mode theory, I reduce the optimization to a two-dimensional physical state that separates resonance detuning from useful enhancement, and show that the familiar O(Q²) stiffness is not intrinsic to the objective but is introduced by the design parameterization. The reduced dynamics have an exact phase structure, which explains why reparameterization, not learning-rate tuning, is the right lever.</p>
+  </div>
+</a>
+<a class="card" href="projects/bic-manifolds.html">
+  <img class="thumb" src="assets/img/thumbs/bic-manifolds.svg" alt="">
+  <div class="body">
+    <h3>Bound States in the Continuum in High-Dimensional Shape Space</h3>
+    <p class="venue">Paper in preparation · co-first author</p>
+    <p class="where">Stanford University · Fan Group · 2026 – present</p>
+    <p class="abstract">I derive how the Q factor of a quasi-BIC scales along an arbitrary path through geometry space: the exponent is set by the order of contact between the path and the radiation-zero set, giving Q ∼ |δ|<sup>−2μ</sup>. Using this law as a search criterion, I locate symmetry-unprotected accidental BICs and show that exact BICs form connected constraint manifolds in high-dimensional shape space, which can be navigated to tune near-field superchirality while staying bound.</p>
+  </div>
+</a>
+<a class="card" href="projects/hyperbolic-phonon-polaritons.html">
+  <img class="thumb" src="assets/img/thumbs/hyperbolic-phonon-polaritons.svg" alt="">
+  <div class="body">
+    <h3>Selective Excitation of Higher-Order Hyperbolic Phonon-Polaritonic Modes</h3>
+    <p class="venue">Paper in preparation · co-first author</p>
+    <p class="where">KAIST · Quantum Nano Optics Lab</p>
+    <p class="abstract">I develop an analytic mode-matching framework, based on the transfer-matrix method, that captures conversion among image-polariton, phonon-polariton, and radiation modes at metal discontinuities. Combined with an adjoint optimization framework I built on the COMSOL API, I inverse-design an Au grating beneath hBN that selectively excites a desired higher-order hyperbolic phonon-polariton mode, and am validating the design with SNOM experiments.</p>
+  </div>
+</a>
+<a class="card" href="projects/moire-fourier-surfaces.html">
+  <img class="thumb" src="assets/img/thumbs/moire-fourier-surfaces.svg" alt="">
+  <div class="body">
+    <h3>Analytical and Inverse Design Framework for Moiré Fourier Photonic Surfaces</h3>
+    <p class="venue">Ongoing research</p>
+    <p class="where">KAIST · Quantum Nano Optics Lab</p>
+    <p class="abstract">I develop a Floquet–Fourier framework for computing polaritonic band structures of conductivity-modulated Fourier surfaces and commensurate moiré superlattices. Making the band-structure model differentiable turns the search for a complete global bandgap into an eigenmode inverse-design problem, by mapping band-edge eigenstates to reciprocal-space scattering channels and optimizing symmetry-adapted harmonics for cavity formation.</p>
+  </div>
+</a>
+<a class="card" href="projects/fundamental-limits.html">
+  <img class="thumb" src="assets/img/thumbs/fundamental-limits.svg" alt="">
+  <div class="body">
+    <h3>Fundamental Limits of Tunable Nanophotonic Devices and Photonic Time Crystals</h3>
+    <p class="venue">Ongoing research</p>
+    <p class="where">KAIST · Quantum Nano Optics Lab</p>
+    <p class="abstract">I apply a Maxwell-constrained QCQP framework to bound the achievable performance of thermo-optically tunable metasurfaces with 3D diffraction-order control, asking whether inverse-designed devices are already near a limit set by materials and design space. I then extend the framework from binary spatial metasurfaces to binary photonic time crystals, deriving bounds on momentum-bandgap width and Floquet amplification rate under bounded modulation.</p>
+  </div>
+</a>
+<a class="card" href="projects/color-router.html">
+  <img class="thumb" src="assets/img/thumbs/color-router.svg" alt="">
+  <div class="body">
+    <h3>Inverse Design of Nanophotonic Color Router Robust to Oblique Incidence</h3>
+    <p class="venue">Adv. Opt. Mater. 2026 · co-first author</p>
+    <p class="where">KAIST · Quantum Nano Optics Lab</p>
+    <p class="abstract">Nanophotonic color routers can replace absorptive color filters in CMOS image sensors, but designs optimized for normal incidence degrade severely when light arrives at an angle. Using large-scale adjoint-based inverse design across multiple incident angles and wavelengths, I designed a freeform color router that keeps about 78% optical efficiency within ±12°, and addressed inter-pixel crosstalk within the same framework.</p>
+  </div>
+</a>
+<a class="card" href="projects/fno-surrogate.html">
+  <img class="thumb" src="assets/img/thumbs/fno-surrogate.svg" alt="">
+  <div class="body">
+    <h3>Fourier Neural Operator Surrogate Solver for Freeform Metamaterials</h3>
+    <p class="venue">Research project</p>
+    <p class="where">KAIST · Quantum Nano Optics Lab</p>
+    <p class="abstract">I implemented a Fourier Neural Operator–based deep network that predicts the electromagnetic field distribution of freeform metamaterials across a broad wavelength range, replacing repeated full-wave simulations. Using the trained surrogate, I built an inverse-design framework for diverse device functionalities.</p>
+  </div>
+</a>
+<a class="card" href="projects/fiber-shape-sensing.html">
+  <img class="thumb" src="assets/img/thumbs/fiber-shape-sensing.svg" alt="">
+  <div class="body">
+    <h3>Shape Sensing of Multimode Optical Fiber via Neural Network</h3>
+    <p class="venue">Visiting research · Summer 2025</p>
+    <p class="where">Harvard Medical School · Wellman Center · Bouma Lab</p>
+    <p class="abstract">I trained a CNN-based network to predict the shape of a multimode optical fiber from sparse transmission-matrix data, achieving over 98% prediction accuracy for a 1 m fiber, and analyzed how fiber length and the number of shape degrees of freedom affect predictability.</p>
+  </div>
+</a>
+</div>
+
+</div></main>
+<footer><div class="wrap">© 2026 Jaehyun Jeon</div></footer>
+</body>
+</html>

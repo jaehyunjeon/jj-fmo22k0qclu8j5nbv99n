@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Inverse Design of Nanophotonic Color Router Robust to Oblique Incidence · Jaehyun Jeon</title>
+<meta name="description" content="Nanophotonic color routers can replace absorptive color filters in CMOS image sensors, but designs optimized for normal incidence degrade severely when lig">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="site-title" href="../index.html">Jaehyun Jeon</a>
+  <nav class="nav">
+    <a href="../index.html">About</a>
+    <a href="../research.html" class="active">Research</a>
+    <a href="../assets/Jaehyun_Jeon_CV.pdf" target="_blank" rel="noopener">CV</a>
+  </nav>
+</div></header>
+<main><div class="wrap">
+
+<a class="back" href="../research.html">← All research</a>
+<article class="project">
+  <h1>Inverse Design of Nanophotonic Color Router Robust to Oblique Incidence</h1>
+  <p class="venue">Adv. Opt. Mater. 2026 · co-first author</p>
+  <p class="where">KAIST · Quantum Nano Optics Lab</p>
+  <p class="authors"><b>J. Jeon</b><sup>†</sup>, C. Park<sup>†</sup>, D. Heo, H. Chung, M. S. Jang, “Inverse design of nanophotonic color router robust to oblique incidence,” <i>Advanced Optical Materials</i> 14(4), e01697 (2026).</p>
+  <div class="btns"><a class="btn" href="https://doi.org/10.1002/adom.202501697" target="_blank" rel="noopener">Paper</a><a class="btn" href="https://ee.kaist.ac.kr/en/research-achieve/professor-min-seok-jangs-team-overcomes-limitations-of-existing-image-sensors-clear-colors-even-under-oblique-light/" target="_blank" rel="noopener">KAIST news</a></div>
+  <div class="figure-ph">Figure coming soon</div>
+  <h2>Abstract</h2>
+  <p>Nanophotonic color routers can replace absorptive color filters in CMOS image sensors, but designs optimized for normal incidence degrade severely when light arrives at an angle. Using large-scale adjoint-based inverse design across multiple incident angles and wavelengths, I designed a freeform color router that keeps about 78% optical efficiency within ±12°, and addressed inter-pixel crosstalk within the same framework.</p>
+  
+<h2>Problem</h2>
+<p>A color router is a metamaterial that steers different wavelengths to different sub-pixels, collecting far more light than
+absorptive Bayer filters. Prior designs were optimized for a single, normal-incidence plane wave and nearly failed when the
+illumination was tilted by around 12°, as it is in real cameras.</p>
+<h2>Approach</h2>
+<ul>
+<li>Built a large-scale gradient-based inverse-design pipeline using the adjoint variable method and automatic differentiation, and identified the bottleneck that had prevented reproducing state-of-the-art designs.</li>
+<li>Optimized the freeform structure jointly over multiple incident angles and wavelengths.</li>
+<li>Treated inter-pixel crosstalk by representing a localized Gaussian beam as a coherent superposition of plane waves over a range of angles, so crosstalk and angular robustness are handled in one framework rather than as separate constraints.</li>
+</ul>
+<h2>Result</h2>
+<p>The optimized router keeps about 78% optical efficiency within a ±12° range of incidence, where earlier designs suffered critical degradation.</p>
+<h2>Related</h2>
+<p class="authors">C. Park<sup>†</sup>, S. Lee<sup>†</sup>, T. Lee, J. Kang, <b>J. Jeon</b>, C. Park, S. Kim, H. Chung, M. S. Jang, “Towards subwavelength pixels: nanophotonic color routers for ultra-compact high-efficiency CMOS image sensors,” <i>Journal of Optics</i> 26(9), 093002 (2024).</p>
+
+</article>
+
+</div></main>
+<footer><div class="wrap">© 2026 Jaehyun Jeon</div></footer>
+</body>
+</html>

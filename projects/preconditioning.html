@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Preconditioning Dynamics of Resonant Inverse Design · Jaehyun Jeon</title>
+<meta name="description" content="High-Q resonant inverse design is notoriously ill-conditioned. Using temporal coupled-mode theory, I reduce the optimization to a two-dimensional physical ">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="site-title" href="../index.html">Jaehyun Jeon</a>
+  <nav class="nav">
+    <a href="../index.html">About</a>
+    <a href="../research.html" class="active">Research</a>
+    <a href="../assets/Jaehyun_Jeon_CV.pdf" target="_blank" rel="noopener">CV</a>
+  </nav>
+</div></header>
+<main><div class="wrap">
+
+<a class="back" href="../research.html">← All research</a>
+<article class="project">
+  <h1>Preconditioning Dynamics of Resonant Inverse Design</h1>
+  <p class="venue">Ongoing research</p>
+  <p class="where">Stanford University · Fan Group · 2026</p>
+  
+  
+  <div class="figure-ph">Figure coming soon</div>
+  <h2>Abstract</h2>
+  <p>High-Q resonant inverse design is notoriously ill-conditioned. Using temporal coupled-mode theory, I reduce the optimization to a two-dimensional physical state that separates resonance detuning from useful enhancement, and show that the familiar O(Q²) stiffness is not intrinsic to the objective but is introduced by the design parameterization. The reduced dynamics have an exact phase structure, which explains why reparameterization, not learning-rate tuning, is the right lever.</p>
+  
+<h2>Motivation</h2>
+<p>Optimizing high-Q resonators by gradient descent is known to be difficult: as Q grows, the landscape becomes stiff and
+step sizes must shrink. This is usually treated as an unavoidable property of resonant objectives. I asked where this
+ill-conditioning actually comes from, and what a principled remedy would look like.</p>
+<h2>Approach</h2>
+<ul>
+<li>Rewrote a field-intensity objective with temporal coupled-mode theory in a two-dimensional physical state: resonance detuning and useful resonant enhancement.</li>
+<li>Represented the design parameterization through its Jacobian-induced kernel <i>K = JJ<sup>T</sup></i> and projected it onto this reduced state, collapsing a high-dimensional optimization step into a closed-form reduced map.</li>
+<li>Derived the full phase structure of the reduced dynamics analytically.</li>
+</ul>
+<h2>Key findings</h2>
+<ul>
+<li>The O(Q²) stiffness is not intrinsic to the resonant objective; it appears when the physical dynamics are pulled back through the parameterization.</li>
+<li>Three exact regimes: <b>clean tracking</b>, <b>transient stall</b>, and <b>runaway detuning</b>. The objective can keep increasing even in the runaway regime, so objective ascent alone does not certify resonance tracking.</li>
+<li>Local stability and global capture are different failure mechanisms; near the fold, an update can be locally stable yet still leave the tracking basin.</li>
+<li>Learning-rate tuning only rescales the step, whereas reparameterization reshapes the kernel <i>K</i> and therefore the optimization geometry itself.</li>
+</ul>
+
+</article>
+
+</div></main>
+<footer><div class="wrap">© 2026 Jaehyun Jeon</div></footer>
+</body>
+</html>
